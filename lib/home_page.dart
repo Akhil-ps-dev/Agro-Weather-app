@@ -6,13 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 var dayInfo = DateTime.now();
-  var dateFormat = DateFormat('EEEE,d MMM,yyyy').format(dayInfo);
-
+var dateFormat = DateFormat('EEEE,d MMM,yyyy').format(dayInfo);
 
 class MyHomePage extends StatelessWidget {
   var client = WeatherData();
   var data;
-  
+
   info() async {
     var position = await GetPosition();
     data = await client.getData(position.latitude, position.longitude);
@@ -60,15 +59,15 @@ class MyHomePage extends StatelessWidget {
                         fontSize: 15,
                         fontFamily: 'MavenPro'),
                   ),
-                  // Image.asset(
-                  //   'assets/img/sunny.png',
-                  //   width: size.width * 0.4,
-                  // ),
-                  Image.network(
-                    'https:${data?.icon}',
-                    width: size.width * 0.36,
-                    fit: BoxFit.fill,
+                  Image.asset(
+                    'assets/img/sunny.png',
+                    width: size.width * 0.4,
                   ),
+                  // Image.network(
+                  //   'https:${data?.icon}',
+                  //   width: size.width * 0.36,
+                  //   fit: BoxFit.fill,
+                  // ),
                   const SizedBox(
                     height: 10,
                   ),
@@ -284,7 +283,7 @@ class MyHomePage extends StatelessWidget {
                         height: 5,
                       ),
                       Text(
-                        '${data?.precipe} mm',
+                        '${data?.pricipe} mm',
                         style: TextStyle(
                             color: Colors.white,
                             fontFamily: 'Hubballi',

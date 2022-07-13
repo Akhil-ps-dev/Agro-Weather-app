@@ -270,6 +270,52 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              //! 3rd expanded
+              Expanded(
+                child: Column(
+                  children: [
+                    Text(
+                      'Wind',
+                      style: TextStyle(
+                          color: Colors.white.withOpacity(0.6),
+                          fontFamily: 'MavnePro',
+                          fontSize: 17),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '19.1 km/hr',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Hubballi',
+                          fontSize: 23),
+                    ),
+
+                    //!2
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      'Last Update',
+                      style: TextStyle(
+                          color: Colors.white.withOpacity(0.6),
+                          fontFamily: 'MavnePro',
+                          fontSize: 17),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '2022-07-22',
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontFamily: 'Hubballi',
+                          fontSize: 23),
+                    ),
+                  ],
+                ),
               )
             ],
           )

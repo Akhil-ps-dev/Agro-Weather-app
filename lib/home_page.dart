@@ -36,10 +36,7 @@ class MyHomePage extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(40),
                   gradient: const LinearGradient(
-                      colors: [
-                        Color.fromARGB(255, 20, 158, 40),
-                        Color.fromARGB(255, 9, 4, 6)
-                      ],
+                      colors: [Color(0xff87CEEB), Color.fromARGB(255, 9, 4, 6)],
                       begin: Alignment.bottomCenter,
                       end: Alignment.topCenter,
                       stops: [0.2, 0.85]),

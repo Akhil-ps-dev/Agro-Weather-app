@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:agri_weather_app/getLocation.dart';
 import 'package:agri_weather_app/weatherData.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +34,10 @@ class MyHomePage extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(40),
                   gradient: const LinearGradient(
-                      colors: [Color(0xff87CEEB), Color.fromARGB(255, 9, 4, 6)],
+                      colors: [
+                        Color(0xff081b25),
+                        Color(0xff87CEEB),
+                      ],
                       begin: Alignment.bottomCenter,
                       end: Alignment.topCenter,
                       stops: [0.2, 0.85]),
@@ -50,7 +51,7 @@ class MyHomePage extends StatelessWidget {
                           fontSize: 35,
                           fontFamily: 'MavenPro'),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Text(
@@ -168,7 +169,7 @@ class MyHomePage extends StatelessWidget {
                               ),
                               Text(
                                 '${data?.wind_dir}',
-                                style: TextStyle(
+                                style: const TextStyle(
                                     color: Colors.white,
                                     fontFamily: 'Hubballi',
                                     fontSize: 20,
